@@ -2,6 +2,7 @@
 
 int main()
 {
+	int i;
 	char Name[50] = "Yu-Hsun Lee"; 
 	// Name is a fixed char vector 
 	// Name[0], Name[1], Name[2], ..., Name[49]
@@ -17,5 +18,11 @@ int main()
 	printf("%s\n", Name);
 	printf("%c\n", Name[5]);
 	printf("%s\n", Name+3);
+	printf("%d\n", Name);		// %u print un-signed integer
+	printf("%d\n", Name+3);
+	for(i=0;i<50;++i)
+	{
+		printf("%d : %c - %u\n", i, Name[i], Name[i]);
+	}
 	return 123;
 }
